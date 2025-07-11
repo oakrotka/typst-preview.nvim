@@ -17,14 +17,15 @@ https://github.com/chomosuke/typst-preview.nvim/assets/38484873/9f8ecf0f-aa1c-4e
 ## 📦 Installation
 
 #### Dependencies
-- curl
+- **curl** (for downloading required binaries, not required if their paths are specified
+  in the config)
 
 **Lazy.nvim:**
 
 ```lua
 {
   'chomosuke/typst-preview.nvim',
-  lazy = false, -- or ft = 'typst'
+  ft = 'typst', -- or cmd = {"TypstPreview", "TypstPreviewToggle", "TypstPreviewUpdate"},
   version = '1.*',
   opts = {}, -- lazy.nvim will implicitly calls `setup {}`
 }
